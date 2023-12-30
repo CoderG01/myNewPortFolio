@@ -35,3 +35,6 @@ body{
 .NavListItem:hover::after,.NavListItem:hover::before{
     width: 100%;
 }
+.clip-path-polygon{
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}

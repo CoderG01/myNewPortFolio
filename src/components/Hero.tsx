@@ -1,47 +1,24 @@
-import ArrowButton from "./ArrowButton";
-import TitleText from "./TitleText";
-
 const Hero = () => {
   return (
-    <div className="w-[90%] md:w-[80%] lg:w-[75%] xl:w-[70%] h-10 mx-auto mt-[100px]">
-      <div className="rounded-xl font-inter bg-[#f3f3f3] py-14 px-16 relative group">
-        <h1 className="text-[3rem] font-bold text-center">Harsh</h1>
-        <p className="text-[24px] capitalize text-center">
-          front end developer
+    <div className="w-[90%] md:w-[80%] lg:w-[75%] xl:w-[70%] mx-auto flex items-center justify-center min-h-screen">
+      <div>
+        <p className="text-[20px] md:text-[30px] font-inter capitalize text-center">
+          hii 🖐🏻i'm
         </p>
-        <p className="capitalize text-[18px] mt-2 text-center">
+        <h1 className="text-[50px] md:text-[90px] font-inter capitalize text-center text-mainBg my-2">
+          harsh
+        </h1>
+        <dd className="text-[17px] md:text-[20px] w-[97%] lg:w-[80%] text-center mx-auto mt-4 capitalize text-[#666666]">
           web developer by profession. providing web services maintaining
           balance of perfectionism & pragmatism.
-        </p>
-        <ArrowButton classNames="absolute bottom-[1.4rem] right-[2rem] text-[#676767] group-hover:text-mainBg transition-[0.3]" />
+        </dd>
+        <div className="w-[80%] md:w-[481px] h-[4px] sm:h-[6px] bg-black clip-path-polygon mx-auto mt-10"></div>
       </div>
-      <div className="w-full lg:w-1/2 gap-4 flex pt-4">
-        <div className="w-full md:w-1/2 bg-[#f3f3f3] h-[240px] rounded-xl relative group pt-3 px-4">
-          <div className="bg-white w-[80%] h-[100px] rounded-md flex justify-center items-center mx-auto">
-            <h1 className="font-saint text-[3rem]">Harsh</h1>
-          </div>
-          <TitleText title="Experience" subTitle="About me" />
-          <ArrowButton classNames="absolute bottom-[1.4rem] right-[2rem] text-[#676767] group-hover:text-mainBg transition-[0.3]" />
-        </div>
-        <div className="w-full md:w-1/2 bg-[#f3f3f3] h-[300px] rounded-xl relative group pt-3 px-4 flex item-center justify-around flex-col">
-          <img
-            src="https://www.siddharth.network/assets/project-images/Theproart/brandbird%20(8).webp"
-            alt="project"
-            className="w-[90%]"
-          />
-          <div className="">
-            <TitleText title="Experience" subTitle="About me" />
-          </div>
-          <ArrowButton classNames="absolute bottom-[1.4rem] right-[2rem] text-[#676767] group-hover:text-mainBg transition-[0.3]" />
-        </div>
-      </div>
-      <div>
-        <div className="bg-[#f3f3f3] h-[240px] w-full">
-          <h1>hey</h1>
-        </div>
+      <div className="w-full  absolute -bottom-[32rem] left-[50%] -translate-x-[50%] -translate-y-[50%] flex flex-col justify-center items-center gap-4">
+        <p className="text-3xl font-bold font-inter">you do scroll down ?</p>
+        <div className="w-[1px] h-[242px] bg-black"></div>
       </div>
     </div>
   );
 };
-
 export default Hero;

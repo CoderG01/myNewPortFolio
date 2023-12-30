@@ -14,8 +14,8 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="h-[30px py-4 w-[90%] md:w-[70%] mx-auto font-inter flex items-center justify-between">
-      <div className="w-[70px] h-[70px] border-[1px] border-mainBg rounded-full flex justify-center items-center bg-mainBg relative group cursor-pointer">
+    <nav className="h-[30px py-4 w-[90%] md:w-[70%] mx-auto font-inter flex items-center justify-between fixed left-[50%] top-0 -translate-x-[50%] -translate-y-0 z-10">
+      <div className="w-[50px] md:w-[70px] h-[50px] md:h-[70px] border-[1px] border-mainBg rounded-full flex justify-center items-center bg-mainBg relative group cursor-pointer">
         <img
           src="./avatar.png"
           alt="avatar image"
@@ -26,7 +26,10 @@ const Navbar = () => {
         <ul className="flex gap-6">
           {menuList?.map((data: MenuListTypes) => {
             return (
-              <li className="text-[18px] cursor-pointer NavListItem relative text-[#676767] hover:text-mainBg transition-[0.4] capitalize">
+              <li
+                key={data?.id}
+                className="text-[18px] cursor-pointer NavListItem relative text-[#676767] hover:text-mainBg transition-[0.4] capitalize"
+              >
                 {data?.name}
               </li>
             );
