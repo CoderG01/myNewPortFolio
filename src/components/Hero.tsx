@@ -9,8 +9,9 @@ const Hero = () => {
           harsh
         </h1>
         <dd className="text-[17px] md:text-[20px] w-[97%] lg:w-[80%] text-center mx-auto mt-4 capitalize text-[#666666]">
-          web developer by profession. providing web services maintaining
-          balance of perfectionism & pragmatism.
+          By sunlight, I'm the GitHub guardian crafting code in VSCode; when the
+          moon rises, I transform into the JavaScript Avenger patrolling the
+          virtual streets of the night.
         </dd>
         <div className="w-[80%] md:w-[481px] h-[4px] sm:h-[6px] bg-black clip-path-polygon mx-auto mt-10"></div>
       </div>
